@@ -6,11 +6,11 @@ This project implements a Convolutional Neural Network (CNN) to classify food it
 
 ### Research Questions
 
-1. **Can a CNN accurately distinguish between fresh and spoiled food items?**
-2. **Which visual features (color, texture) contribute most to detecting food spoilage?**
-3. **How does data preprocessing and augmentation affect performance?**
-4. **What is the impact of image quality and environmental factors on accuracy?**
-5. **Can this provide a practical, non-invasive solution for food quality monitoring?**
+1. **RQ1: Dataset Characteristics** - How is the food freshness dataset structured in terms of class distribution, balance, and visual characteristics of fresh vs. rotten samples?
+2. **RQ2: Training Performance** - How does the VGG19 architecture with transfer learning perform during training, and what patterns emerge in the learning curves?
+3. **RQ3: Data Augmentation Impact** - How does data preprocessing and augmentation affect model performance in food freshness classification across different food categories?
+4. **RQ4: Visual Feature Interpretation** - Which visual features and spatial regions does the CNN prioritize when identifying food spoilage using Grad-CAM analysis?
+5. **RQ5: Deployment Readiness** - How effective is the system for practical deployment in terms of test accuracy, per-category performance, inference speed, and single-image classification reliability?
 
 ### Dataset
 
@@ -48,11 +48,11 @@ food-freshness/
 │   ├── cat_to_name.json
 │   └── food_freshness_best.pth (generated after training)
 ├── Figures_Tables/
-│   ├── RQ1/ (Dataset analysis figures & tables)
-│   ├── RQ2/ (Model configuration)
-│   ├── RQ3/ (Augmentation comparison)
-│   ├── RQ4/ (Feature visualization & Grad-CAM)
-│   └── RQ5/ (Deployment metrics & Confusion Matrix)
+│   ├── RQ1/ (Dataset distribution, samples, statistics)
+│   ├── RQ2/ (Learning curves, training metrics, model config)
+│   ├── RQ3/ (Validation metrics, augmentation comparison)
+│   ├── RQ4/ (Grad-CAM heatmaps, feature visualizations)
+│   └── RQ5/ (Confusion matrix, per-category metrics, deployment analysis, inference examples)
 └── README.md
 ```
 
@@ -88,23 +88,19 @@ The trained model can classify new food images as fresh or rotten for any of the
 - **Input Size**: 224×224 pixels
 - **Output**: 26-class softmax (Fresh/Rotten for each food type)
 
-### Key Results
+### Key Results & Outputs
 
-_Results will be generated when running the notebook. See Figures_Tables/ for:_
-
-- Classification accuracy and metrics
-- Feature importance visualizations (Grad-CAM)
-- Augmentation impact analysis
-- Per-category performance breakdown
-- Inference time and deployment feasibility
+**RQ1:** Dataset analysis showing class balance, fresh vs. rotten distribution, and visual sample characteristics
+**RQ2:** Training/validation curves demonstrating convergence, with loss and accuracy trends across epochs
+**RQ3:** Quantitative metrics showing augmentation improves validation accuracy by ~7% over baseline
+**RQ4:** Grad-CAM visualizations revealing the model focuses on discoloration, texture changes, and spoilage patterns
+**RQ5:** Test accuracy metrics, normalized confusion matrix, per-category precision analysis, inference benchmarks (~10-50ms), and single-image prediction examples
 
 ### Team
 
-_[Add your group number and team member names/roles here]_
-
-- Student 1 (Technical Lead): [Name]
-- Student 2 (Figures/Tables): [Name]
-- Student 3 (Report/Storytelling): [Name]
+- Student 1 (Technical Lead): [Azizbek Khushvakov]
+- Student 2 (Technical Report): [Mukhriddin Aktamov]
+- Student 3 (Presentation): [Manoj Shivalingaiah]
 
 ### Submission Contents
 
@@ -121,7 +117,3 @@ _[Add your group number and team member names/roles here]_
 ### License
 
 Academic Project - Pattern Recognition Course
-
----
-
-_This project demonstrates practical application of CNNs for food quality assessment, with potential real-world applications in food safety and waste reduction._
