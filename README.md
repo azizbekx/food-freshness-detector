@@ -98,13 +98,13 @@ The trained model can classify new food images as fresh or rotten for any of the
 
 ### Team
 
-- Student 1 (Technical Lead): [Azizbek Khushvakov]
-- Student 2 (Technical Report): [Mukhriddin Aktamov]
-- Student 3 (Presentation): [Manoj Shivalingaiah]
+- Student 1 : [Azizbek Khushvakov]
+- Student 2 : [Mukhriddin Aktamov]
+- Student 3 : [Manoj Shivalingaiah]
 
 ### Submission Contents
 
-1. **Jupyter Notebook** (`Food_Freshness_Detection.ipynb`): Complete implementation with all 5 RQs
+1. **Jupyter Notebook** (`food-freshness-detector-kaggle.ipynb`): Complete implementation with all 5 RQs
 2. **GitHub Repository**: Full source code and dataset instructions
 3. **Figures_Tables.zip**: Organized outputs (RQ1-RQ5 folders with PDFs and Excel files)
 
